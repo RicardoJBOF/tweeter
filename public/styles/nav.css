@@ -1,0 +1,39 @@
+/*
+ * Global layout stuff
+ */
+
+body nav span {
+  font-family: 'Bungee', sans-serif;
+  font-size: 36px;
+ }
+
+ nav { 
+   height: 120px;
+   max-width: 100%;
+   background-color: #4056A1;
+   display: flex;
+   align-items: center;
+   padding: 1.5em;
+   position: fixed; /* Set the navbar to fixed position */
+   top: 0; /* Position the navbar at the top of the page */
+   width: 100%; /* Full width */
+ }
+
+ .nav-message {
+   font-style: normal;
+   font-family: sans-serif;
+   margin-left: auto;
+
+ }
+
+ .specific-nav-message{
+   font-weight: bold;
+   display:inline;
+ }
+
+ .nav-arrows {
+   text-align: center;
+ }
+ 
+
+ 
