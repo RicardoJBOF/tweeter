@@ -1,5 +1,4 @@
 .photo-name {
-  height: 400px;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -22,4 +21,21 @@
 .first-name {
   font-weight: bold;
   display:inline;
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+.photo-name {
+
+  max-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #F08A5D;
+  padding: 20px 40px;
+  margin: 60px;
+
+}
+
 }

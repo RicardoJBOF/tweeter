@@ -10,7 +10,7 @@ body nav span {
  nav { 
    height: 120px;
    max-width: 100%;
-   background-color: #4056A1;
+   background-color: #F08A5D;
    display: flex;
    align-items: center;
    padding: 1.5em;
@@ -34,6 +34,17 @@ body nav span {
  .nav-arrows {
    text-align: center;
  }
+
+
+ @media only screen and (min-width: 1024px) {
+
+  nav { 
+    background-color: #4056A1;
+ }
  
+
+}
+
+
 
  
