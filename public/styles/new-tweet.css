@@ -148,4 +148,11 @@ div.tweet-container.container-hashtag:hover{
   font-size: 36px;
 }
 
+.error {
+  color:red;
+  background-color: #fce4e4;
+  border: 1px solid red;
+  padding: 10px 10px;
+}
+
 
