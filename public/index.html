@@ -26,26 +26,6 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
   
-  
-    <!-- Preventing Default Behaviour of Reloading Page -->
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script>
-    $(function() {
-      const $button = $('#load-more-posts');
-      $button.on('click', function () {
-        console.log('Button clicked, performing ajax call...');
-        $.ajax('more-posts.html', { method: 'GET' })
-        .then(function (morePostsHtml) {
-          console.log('Success: ', morePostsHtml);
-          $button.replaceWith(morePostsHtml);
-        });
-      });
-    });
-    </script>
-  
-  
-  
-  
   </head>
 
   <body>
@@ -78,7 +58,7 @@
       <div class="container-body">
         <section class="new-tweet">
           <h2 class="compose-tweet">Compose Tweet</h2>
-          <form method="POST" action='/tweets/'>
+          <form id="sub-tweet">
             <label class="label-tweet" for="tweet-text">What are you humming about?</label>
             <div class="text-area">
               <script src="scripts/composer-char-counter.js"></script>

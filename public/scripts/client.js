@@ -39,14 +39,11 @@ const data = [
 
 
 const renderTweets = function(tweets) {
-  for(let tweet of tweets) {
+  $('.container-body').empty(); //after send the tweet, the send box will disappear
+  for(let tweet of tweets.reverse()) {
     let value = createTweetElement(tweet);
     $('.container-body').append(value);
   };
-
-  // loops through tweets
-  // calls createTweetElement for each tweet
-  // takes return value and appends it to the tweets container
 }
 
 
@@ -74,10 +71,53 @@ const createTweetElement = function(tweetData) {
   return $tweet;
 }
 
+const loadTweets = function() {
+  $.ajax({
+    type: "GET",
+    url: '/tweets',
+  }).then( (response) => {
+    renderTweets(response)
 
-renderTweets(data);
+  });
+
+  // console.log('#sub-tweet');
+
+};
 
 
+
+
+
+///GET AJAX REQUEST
+
+
+$('#sub-tweet').on('submit', function(event) {
+
+
+  console.log($('.tweet-text').val().length);
+  if ($('.tweet-text').val().length === 0) {
+
+  alert("Please, type a message!"); 
+
+  } else if ($('.tweet-text').val().length > 140 ) {
+
+  alert('The maximum allowed length is 140 letters!'); 
+
+  } else if ($('.tweet-text').val().length < 140 ) {
+
+  event.preventDefault();
+  const myText = $('#sub-tweet');
+  $.ajax({
+    type: "POST",
+    url: '/tweets',
+    data: myText.serialize(),
+  }).then( () => {
+    loadTweets();
+  })
+  
+  }
+
+})
 
 
 
