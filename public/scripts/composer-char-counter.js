@@ -1,29 +1,16 @@
-//alert('Hello');
+//COUNT CHARACTERS USING AJAX AND JQUERY
 
-$(document).ready(function () {
-  $("textarea").on("keydown", function () {
-    
-    let test = this.value.length;
-    let currentCara = 140 - test;
-    let counter = $(this).parent().siblings('.btn-n-counter').children('div').children(".counter");
-
-    if(currentCara < 0) {
-      counter.addClass('redCounter')
-    } else {
-      counter.removeClass('redCounter')
-    }
-    counter.text(currentCara);
-
-    
+$(document).ready(() => {
+  $("textarea").on("keyup", function () {
+    const current = 140 - this.value.length;
+    let counter = $(this)
+      .parent()
+      .siblings(".btn-n-counter")
+      .children("div")
+      .children(".counter")
+      .text(current);
+    current < 0
+      ? counter.addClass("red-counter")
+      : counter.removeClass("red-counter");
   });
 });
-
-
-// $(document).ready(function () {
-
-//   $("#tweet-text").on("keydown", function () {
-//     $("#counter").text(this.value.length);
-
-//   });
-
-// });

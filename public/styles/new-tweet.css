@@ -2,10 +2,9 @@
   width: 100%;
 }
 
-.compose-tweet{
+.compose-tweet {
   text-align: center;
 }
-
 
 .btn-n-counter {
   margin: 5px 0 0;
@@ -14,9 +13,9 @@
 }
 
 .first-btn {
-  background-color: #4056A1;
+  background-color: #4056a1;
   color: white;
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
   border: 0;
   padding: 5px;
 }
@@ -24,13 +23,12 @@
 .counter {
   font-style: normal;
   font-weight: bold;
-
 }
 
 .tweet-text {
-width: 100%;
-font-style: normal;
-font-weight: bold;
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .label-tweet {
@@ -39,7 +37,7 @@ font-weight: bold;
   font-weight: bold;
 }
 
-.text-area {  
+.text-area {
   width: 100%;
   height: 48px;
   font-size: 18px;
@@ -48,8 +46,8 @@ font-weight: bold;
 }
 
 .text-area textarea {
-    border-bottom: 5px solid #545149;
-    outline: none;
+  border-bottom: 5px solid #545149;
+  outline: none;
 }
 
 .tweet-text {
@@ -63,10 +61,9 @@ font-weight: bold;
   height: 48px;
 }
 
-.redCounter {
-  color:red;  
+.red-counter {
+  color: red;
 }
-
 
 div .tweet-container {
   background-color: #f4f1ec;
@@ -76,7 +73,6 @@ div .tweet-container {
   margin: 60px 0;
   padding: 0 10px;
   font-weight: bold;
-
 }
 
 div .tweet-container:hover {
@@ -91,13 +87,13 @@ div .tweet-container:hover {
 }
 
 .up-container {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 30px;
 }
 
 .up-container:hover {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 30px;
 }
@@ -110,52 +106,49 @@ div.tweet-container.container-hashtag:hover{
   color: #545149
 } */
 
-.middle-container{
-  display:flex;
+.middle-container {
+  display: flex;
   justify-content: flex-start;
   padding: 50px 30px;
   font-family: sans-serif;
 }
 
-.middle-container:hover{
-  display:flex;
+.middle-container:hover {
+  display: flex;
   justify-content: flex-start;
   padding: 50px 30px;
   font-family: sans-serif;
 }
 
-.bottom-container{
+.bottom-container {
   border-top: 5px solid #545149;
   outline: none;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 20px 30px 40px;
   font-size: 18px;
 }
 
-.bottom-container:hover{
+.bottom-container:hover {
   border-top: 5px solid #545149;
   outline: none;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 20px 30px 40px;
   font-size: 18px;
 }
 
 .symbols-bottom {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   font-size: 36px;
 }
 
 .error {
-  color:red;
+  color: red;
   background-color: #fce4e4;
   border: 1px solid red;
 }
 
-
 @media only screen and (min-width: 1024px) {
-
 }
-
