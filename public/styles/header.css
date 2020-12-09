@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f08a5d;
+  background-image: url(../images/background.jpg);
 }
 
 .space-top {
@@ -30,7 +30,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-color: #f08a5d;
+    background-image: url(../images/background.jpg);
     padding: 20px 40px;
     margin: 60px;
   }

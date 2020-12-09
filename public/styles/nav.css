@@ -10,7 +10,7 @@ body nav span {
 nav {
   height: 120px;
   max-width: 100%;
-  background-color: #f08a5d;
+  background-image: url(../images/background.jpg);
   color: #ffffff;
   display: flex;
   align-items: flex-end;
@@ -45,5 +45,6 @@ nav {
 @media only screen and (min-width: 1024px) {
   nav {
     background-color: #4056a1;
+    background-image: none;
   }
 }
