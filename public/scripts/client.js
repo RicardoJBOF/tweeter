@@ -40,9 +40,9 @@ const createTweetElement = function(tweetData) {
       <div class="bottom-container">
         <div class="days-ago">10 days ago</div>
         <div class="symbols-bottom">
-        <div class="symbol1">&#174;</div>
-        <div class="symbol2">&#174;</div>
-        <div class="symbol3">&#174;</div>
+        <div class="symbol-inter">&#9873</div>
+        <div class="symbol-inter">&#8633</div>
+        <div class="symbol-inter">&#9829</div>
       </div>
     </div> 
     </header>

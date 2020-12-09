@@ -141,7 +141,12 @@ div.tweet-container.container-hashtag:hover{
 .symbols-bottom {
   display: flex;
   justify-content: space-between;
-  font-size: 36px;
+  font-size: 1em;
+  color: #4056a1;
+}
+
+.symbol-inter {
+  padding: 0 0.2em;
 }
 
 .error {
