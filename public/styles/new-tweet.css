@@ -92,19 +92,29 @@ div .tweet-container:hover {
   padding: 30px;
 }
 
+.container-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container-hashtag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.space-inside-teewet {
+  padding-left: 0.5em;
+}
+
 .up-container:hover {
   display: flex;
   justify-content: space-between;
   padding: 30px;
 }
-
-/* div.tweet-container.container-hashtag:hover { 
-  color: #f4f1ec;
-}
-
-div.tweet-container.container-hashtag:hover{
-  color: #545149
-} */
 
 .middle-container {
   display: flex;

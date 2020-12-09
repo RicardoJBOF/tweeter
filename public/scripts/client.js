@@ -33,8 +33,19 @@ const createTweetElement = function(tweetData) {
   <article class="tweet-container"> 
     <header id= "results">  
       <div class="up-container">
-        <div class="container-name"> ${tweetData.user.name} </div>
+
+        <div class="container-name"> 
+          <div>
+            <img src="${tweetData.user.avatars}" alt="avatar">
+          </div> 
+          <div class="space-inside-teewet">
+            ${tweetData.user.name}
+          </div>
+        </div>
+
+
         <div class="container-hashtag">${tweetData.user.handle}</div>
+        
       </div>
       <div class="middle-container">${escape(tweetData.content.text)}</div>
       <div class="bottom-container">
