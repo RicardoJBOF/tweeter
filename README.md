@@ -6,9 +6,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-screenshot 1 - /urls image
-screenshot 2 - /urls/new
-screenshot 3 - /login image
+![Screenshot Desktop View](https://github.com/RicardoJBOF/tweeter/blob/master/docs/Desktop-View.png)
+![Screenshot Mobile View](https://github.com/RicardoJBOF/tweeter/blob/master/docs/Mobile-View.png)
 
 ## Getting Started
 
