@@ -3,48 +3,47 @@
  */
 
 body nav span {
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
   font-size: 36px;
- }
-
- nav { 
-   height: 120px;
-   max-width: 100%;
-   background-color: #F08A5D;
-   display: flex;
-   align-items: center;
-   padding: 1.5em;
-   position: fixed; /* Set the navbar to fixed position */
-   top: 0; /* Position the navbar at the top of the page */
-   width: 100%; /* Full width */
- }
-
- .nav-message {
-   font-style: normal;
-   font-family: sans-serif;
-   margin-left: auto;
-
- }
-
- .specific-nav-message{
-   font-weight: bold;
-   display:inline;
- }
-
- .nav-arrows {
-   text-align: center;
- }
-
-
- @media only screen and (min-width: 1024px) {
-
-  nav { 
-    background-color: #4056A1;
- }
- 
-
 }
 
+nav {
+  height: 120px;
+  max-width: 100%;
+  background-color: #f08a5d;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  padding: 1em 2em ;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
 
+.nav-message {
+  font-style: normal;
+  font-family: sans-serif;
+  margin-left: auto;
+}
 
- 
+.specific-nav-message {
+  font-weight: bold;
+  display: inline;
+}
+
+.nav-arrows {
+  text-align: center;
+  color: red;
+  font-size: 1.5em;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056a1;
+  }
+}

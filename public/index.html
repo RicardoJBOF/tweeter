@@ -5,58 +5,77 @@
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-  
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      
-      <div><span>tweeter</span></div>
-      <div class= "nav-message"> <div class= "specific-nav-message">Write</div> a new tweet <div class="nav-arrows">&#65086;</div></div>
+      <div>
+        <span>tweeter</span>
+      </div>
 
+      <div class="nav-message">
+        
+        <div class="adjust-padding">
+          <div class="specific-nav-message">Write</div> a new tweet
+        </div>
 
+        <div class="nav-arrows">&#8811</div>
+        
+      </div>
     </nav>
+
+
+
     <div class="new-format">
+      <div class="space-top"><p></p></div>
 
-    <div class="space-top"><p></p></div>
-
-    <header class="photo-name">
-      <div class="image-name">
-        <div>
-            <img src="/images/profile-hex.png"> 
+      <header class="photo-name">
+        <div class="image-name">
+          <div>
+            <img src="/images/profile-hex.png" />
+          </div>
+          <div>
+            <h2 class="full-name">
+              <div class="first-name">Ricardo</div>
+              Barbosa
+            </h2>
+          </div>
         </div>
-        <div>
-            <h2 class="full-name"><div class="first-name">Ricardo </div>Barbosa</h2>
-        </div>
-      </div>  
-    </header>
-
+      </header>
     </div>
-
-
 
     <!-- Page-specific (main) content here -->
     <main class="container">
@@ -64,22 +83,29 @@
         <section class="new-tweet">
           <h2 class="compose-tweet">Compose Tweet</h2>
 
-            <a class="msg-error-empty error">Please, type a message!</a>
-            <a class="msg-error-limit error">The maximum allowed length is 140 letters!</a>
-
+          <a class="msg-error-empty error">Please, type a message!</a>
+          <a class="msg-error-limit error"
+            >The maximum allowed length is 140 letters!</a
+          >
 
           <form id="sub-tweet">
-            <label class="label-tweet" for="tweet-text">What are you humming about?</label>
+            <label class="label-tweet" for="tweet-text"
+              >What are you humming about?</label
+            >
             <div class="text-area">
               <script src="scripts/composer-char-counter.js"></script>
               <textarea name="text" class="tweet-text"></textarea>
             </div>
-            <div class='btn-n-counter'>
+            <div class="btn-n-counter">
               <div>
-                <button type="submit" id="submmit-btn" class="first-btn">Tweet</button>
+                <button type="submit" id="submmit-btn" class="first-btn">
+                  Tweet
+                </button>
               </div>
               <div>
-                <output name="counter" class="counter" for="tweet-text">140</output>
+                <output name="counter" class="counter" for="tweet-text"
+                  >140</output
+                >
               </div>
             </div>
           </form>
