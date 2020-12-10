@@ -89,21 +89,19 @@ div .tweet-container:hover {
 .up-container {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 30px 5px;
 }
 
 .container-name {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .container-hashtag {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .space-inside-teewet {

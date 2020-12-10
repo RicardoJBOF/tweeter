@@ -1,11 +1,3 @@
-
-
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 //FUNCTION TO START THE CODE AFTER THE DOCUMENT IS READY
 $(document).ready( function() {
 
@@ -40,8 +32,6 @@ const timeSince = creationDate => {
   return output ? output + adjustedSuffix + " ago" : "Just now";
 };
 
-
-
 const renderTweets = function(tweets) {
   //LOOP MESSAGES
   //REVER IS A PROPERTY TO LOOP MESSAGE FROM NEW TO OLD ONES 
@@ -74,7 +64,6 @@ const createTweetElement = function(tweetData) {
             ${tweetData.user.name}
           </div>
         </div>
-
         <div class="container-hashtag">${tweetData.user.handle}</div>
         
       </div>

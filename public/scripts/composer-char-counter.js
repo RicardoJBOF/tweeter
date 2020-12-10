@@ -1,5 +1,4 @@
 //COUNT CHARACTERS USING AJAX AND JQUERY
-
 $(document).ready(() => {
   $("textarea").on("keyup", function () {
     const current = 140 - this.value.length;
