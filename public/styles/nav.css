@@ -1,7 +1,3 @@
-/*
- * Global layout stuff
- */
-
 body nav span {
   font-family: "Bungee", sans-serif;
   font-size: 36px;
@@ -31,9 +27,19 @@ nav {
   display: inline;
 }
 
+@-webkit-keyframes red {  
+  0% { color: #DC143C; }
+  50% { color: #DC143C; }
+  51% { color: red; }
+  100% { color: red; }
+}
+
 .nav-arrows {
   text-align: center;
   color: red;
+  -webkit-animation-name: red;  
+  -webkit-animation-iteration-count: infinite;  
+  -webkit-animation-duration: 2s; 
   font-size: 1.5em;
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
