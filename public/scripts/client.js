@@ -1,3 +1,5 @@
+
+
 /*
  * Client-side JS logic goes here
  * jQuery is already loaded
@@ -7,10 +9,40 @@
 //FUNCTION TO START THE CODE AFTER THE DOCUMENT IS READY
 $(document).ready( function() {
 
+// CALCULATE TIME SPENT BETWEEN TWEETERS
+const timeSince = creationDate => {
+  const milliseconds = Date.now() - creationDate;
+  const seconds = milliseconds / 1000;
+  const minutes = seconds / 60;
+  const hours = minutes / 60;
+  const days = hours / 24;
+  const months = days / 30;
+  const years = months / 12;
+  const periods = [years, months, days, hours, minutes, seconds];
+  let counter = 0;
+  let output;
+  for (const reference of periods) {
+    if (reference > 1) {
+      output = Math.round(reference);
+      break;
+    }
+    counter++;
+  }
+  const suffix = {
+    0: " year",
+    1: " month",
+    2: " day",
+    3: " hour",
+    4: " minute",
+    5: " second"
+  };
+  const adjustedSuffix = output > 1 ? suffix[counter] + "s" : suffix[counter];
+  return output ? output + adjustedSuffix + " ago" : "Just now";
+};
+
 
 
 const renderTweets = function(tweets) {
-
   //LOOP MESSAGES
   //REVER IS A PROPERTY TO LOOP MESSAGE FROM NEW TO OLD ONES 
   for(let tweet of tweets) {
@@ -43,13 +75,12 @@ const createTweetElement = function(tweetData) {
           </div>
         </div>
 
-
         <div class="container-hashtag">${tweetData.user.handle}</div>
         
       </div>
       <div class="middle-container">${escape(tweetData.content.text)}</div>
       <div class="bottom-container">
-        <div class="days-ago">10 days ago</div>
+        <div class="days-ago">${timeSince(tweetData.created_at)}</div>
         <div class="symbols-bottom">
         <div class="symbol-inter">&#9873</div>
         <div class="symbol-inter">&#8633</div>
