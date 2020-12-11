@@ -20,6 +20,8 @@ nav {
   font-style: normal;
   font-family: sans-serif;
   margin-left: auto;
+  /* margin-bottom: 1.25em; */
+  
 }
 
 .specific-nav-message {
@@ -28,10 +30,21 @@ nav {
 }
 
 @-webkit-keyframes red {  
-  0% { color: #DC143C; }
-  50% { color: #DC143C; }
-  51% { color: red; }
-  100% { color: red; }
+  0% { color: #DC143C;}
+  50% { 
+    color: #DC143C;
+    position: relative;
+    top: 0.05em; }
+  51% { 
+    color: red;
+    position: relative;
+    top: 0.1em;
+  }
+  100% { 
+    color: red;
+    position: relative;
+    top: 0.2em;
+  }
 }
 
 .nav-arrows {
@@ -39,13 +52,16 @@ nav {
   color: red;
   -webkit-animation-name: red;  
   -webkit-animation-iteration-count: infinite;  
-  -webkit-animation-duration: 2s; 
+  -webkit-animation-duration: 1.5s; 
   font-size: 1.5em;
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+  /* position: absolute;
+  top: 50%;
+  right: 9.5%; */
 }
 
 @media only screen and (min-width: 1024px) {
