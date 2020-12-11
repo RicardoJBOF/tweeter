@@ -20,9 +20,12 @@ nav {
   font-style: normal;
   font-family: sans-serif;
   margin-left: auto;
-  /* margin-bottom: 1.25em; */
-  
 }
+
+.nav-message:hover {
+  color: #e6e6e6;
+}
+
 
 .specific-nav-message {
   font-weight: bold;

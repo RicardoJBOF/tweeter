@@ -97,6 +97,11 @@ $(document).ready(function () {
   $(".msg-error-empty").hide();
   $(".msg-error-limit").hide();
 
+  //CLICK BOTTON TO TOGGLE COMPOSE TWEET FORM
+  $(".nav-message").click(function () {
+    $(".new-tweet").toggle();
+  });
+
   ///AJAX REQUEST
   $("#sub-tweet").on("submit", function (event) {
     //PREVENT DEFAULT BEHAVIOUR OF RELOADING PAGE
@@ -129,5 +134,5 @@ $(document).ready(function () {
       });
     }
   });
-  
+
 });
