@@ -100,6 +100,7 @@ $(document).ready(function () {
   //CLICK BOTTON TO TOGGLE COMPOSE TWEET FORM
   $(".nav-message").click(function () {
     $(".new-tweet").toggle();
+    $(".tweet-text").click();
   });
 
   ///AJAX REQUEST
