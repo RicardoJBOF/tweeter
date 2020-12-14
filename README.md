@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-PS: The student forked and cloned the application from a (incomplete) repository, then build upon it to practice his skills. 
+PS: The student forked and cloned the application from a (incomplete) repository, then built upon it to practice his skills. 
 
 ## Final Product
 
@@ -61,6 +61,9 @@ PS: The student forked and cloned the application from a (incomplete) repository
 
 ### Stretch
 
-- When a user clicks the Compose button in the Navigation Bar: if the Compose Tweet box is currently hidden, then it is shown, and the textarea inside it is auto-focused; if the Compose Tweet box is currently showing, then it is hidden; and in either case, transitions between 'shown' and 'hidden' states should be animated
+- When a user clicks the Compose button in the Navigation Bar: 
+  - If the Compose Tweet box is currently hidden, then it is shown, and the textarea inside it is auto-focused
+  - If the Compose Tweet box is currently showing, then it is hidden
+  - In either case, transitions between 'shown' and 'hidden' states should be animated
 
 
